@@ -6,7 +6,9 @@ import Contact from './components/Contacts/Contact'
 
 function App() {
   return (
-    <Router>
+    <Router basename='/myPortfolio'>
+      {' '}
+      {/* Set the basename to match your subdirectory */}
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<About />} />
