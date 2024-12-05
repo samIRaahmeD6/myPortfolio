@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/samIRaahmeD6/myPortfolio",
+  "homepage": "https://samIRaahmeD6.github.io/myPortfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
