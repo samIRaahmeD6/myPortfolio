@@ -35,5 +35,9 @@ Open your browser and navigate to http://localhost:5173 to view the application.
 To update portfolio data, edit the portfolioData.js file located in the src/data folder.
 You can easily add or modify projects, experiences, and other sections by updating the corresponding objects.
 
+## Direct Link
+To open in browser
+https://samiraahmed6.github.io/myPortfolio
+
 # Author
 Samira Ahmed
