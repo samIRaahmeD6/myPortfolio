@@ -1,3 +1,5 @@
+🚀 **[Live Demo]([https://your-live-link.com](https://samiraahmed6.github.io/myPortfolio))**
+
 ### Portfolio Project
 ## Overview
 This is a personal portfolio project built using React and Vite to showcase my skills, experiences, and projects. The application is designed with smooth animations and a responsive layout to ensure a great user experience across all devices.
@@ -35,9 +37,8 @@ Open your browser and navigate to http://localhost:5173 to view the application.
 To update portfolio data, edit the data.js file located in the assets/data folder.
 You can easily add or modify projects, experiences, and other sections by updating the corresponding objects.
 
-## Direct Link
-To open in browser
-https://samiraahmed6.github.io/myPortfolio
+
+
 
 # Author
 Samira Ahmed
