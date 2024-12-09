@@ -27,14 +27,14 @@ const Details = () => {
               <h3 className='text-2xl max-sm:text-xl font-mono'>
                 Hello, I am Samira Ahmed
               </h3>
-              <h1 className='text-5xl my-4 max-sm:text-2xl font-mono'>
+              <h1 className='text-5xl my-4 max-sm:text-2xl font-mono flex max-sm:justify-center max-md:justify-center'>
                 ABOUT ME
               </h1>
-              <p className='w-96 text-sm max-sm:w-64 max-xl:w-72 font-sans'>
+              <p className='w-96 text-sm max-sm:w-64 max-xl:w-72 font-sans flex text-center'>
                 {aboutme.description2}
               </p>
               <motion.div
-                className='flex space-x-4 my-6'
+                className='flex space-x-4 my-6 max-sm:justify-center'
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
