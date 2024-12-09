@@ -10,7 +10,7 @@ const Skills = () => {
       transition={{ duration: 1 }}
     >
       <div className='text-5xl mt-16 mb-10 max-sm:mt-0'>
-        <h1>Skills</h1>
+        <h1 className='max-sm:text-4xl'>Skills</h1>
       </div>
       <motion.div
         className='grid grid-cols-5 gap-10 justify-items-center max-sm:grid-cols-3 max-sm:gap-5 max-md:grid-cols-4'

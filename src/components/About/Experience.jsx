@@ -30,7 +30,9 @@ const Experience = () => {
             <div className='flex justify-center'>
               <hr className='w-60' />
             </div>
-            <p className='p-6 font-serif'>{experience.description}</p>
+            <p className='p-6 font-serif max-sm:text-sm'>
+              {experience.description}
+            </p>
           </motion.div>
         ))}
       </div>

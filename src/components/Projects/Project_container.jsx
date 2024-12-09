@@ -26,7 +26,7 @@ const Project_container = () => {
         viewport={{ once: false }}
       >
         <h3 className='text-2xl font-mono'>Some of my works</h3>
-        <h1 className='text-5xl font-mono'>Projects</h1>
+        <h1 className='text-5xl font-mono max-sm:text-4xl'>Projects</h1>
       </motion.div>
 
       <motion.div

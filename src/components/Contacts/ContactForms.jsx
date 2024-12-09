@@ -11,7 +11,7 @@ const ContactForms = () => {
         viewport={{ once: false }}
       >
         <h3 className='text-2xl'>Want to contact?</h3>
-        <h1 className='text-5xl'>Contact</h1>
+        <h1 className='text-5xl max-sm:text-4xl'>Contact</h1>
       </motion.div>
 
       <motion.form

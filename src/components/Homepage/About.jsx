@@ -107,7 +107,7 @@ const About = () => {
             viewport={{ once: false }}
           >
             <img
-              className='h-96 w-96 text-center border-2 object-cover max-sm:h-64 max-sm:w-64 max-sm:space-x-0'
+              className='h-96 w-96 text-center border-2 object-cover max-sm:h-64 max-sm:w-64 max-sm:space-x-0 max-sm:hidden max-md:hidden'
               src={aboutme.profilepic1}
               alt='Samira Ahmed'
             />
