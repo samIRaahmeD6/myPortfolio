@@ -1,4 +1,4 @@
-🚀 **[Live Demo]([https://your-live-link.com](https://samiraahmed6.github.io/myPortfolio))**
+🚀 **[Live Demo](https://samiraahmed6.github.io/myPortfolio)**
 
 ### Portfolio Project
 ## Overview
