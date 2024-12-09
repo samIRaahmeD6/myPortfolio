@@ -17,7 +17,7 @@ Installation
 To set up the project locally, follow these steps:
 
 Clone the repository:
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/samIRaahmeD6/myPortfolio
 
 Navigate to the project directory:
 cd portfolio
