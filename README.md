@@ -32,7 +32,7 @@ Open your browser and navigate to http://localhost:5173 to view the application.
 
 
 ## Usage
-To update portfolio data, edit the portfolioData.js file located in the src/data folder.
+To update portfolio data, edit the data.js file located in the assets/data folder.
 You can easily add or modify projects, experiences, and other sections by updating the corresponding objects.
 
 ## Direct Link
