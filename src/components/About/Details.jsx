@@ -39,18 +39,12 @@ const Details = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-              <button
-                  className='bg-zinc text-slate-200 h-12 w-72 rounded-md border-2 hover:bg-transparent hover:border-2 font-sans text-xl max-sm:w-64'
-                  onClick={() => {
-                    const link = document.createElement('a');
-                    link.href = '/Samira_Ahmed_CV.pdf'; // 🎯 Correct path
-                    link.download = 'Samira_Ahmed_CV.pdf';
-                    link.click();
-                  }}
-                >
+              <a href="/myPortfolio/Samira_Ahmed.pdf" download>
+                <button className='bg-zinc text-slate-200 h-12 w-72 rounded-md border-2 hover:bg-transparent hover:border-2 font-sans text-xl max-sm:w-64'>
                   Download CV
-              </button>
-                              </motion.div>
+                </button>
+              </a>
+            </motion.div>
             </motion.div>
 
             <motion.div
