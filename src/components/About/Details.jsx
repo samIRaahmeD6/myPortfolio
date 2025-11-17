@@ -24,13 +24,13 @@ const Details = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, type: 'spring', stiffness: 60 }}
             >
-              <h3 className='text-2xl max-sm:text-xl font-mono'>
+              <h3 className='text-2xl max-sm:text-xl'>
                 Hello, I am Samira Ahmed
               </h3>
-              <h1 className='text-5xl my-4 max-sm:text-2xl font-mono flex max-sm:justify-center max-md:justify-center'>
+              <h1 className='text-5xl my-4 max-sm:text-2xl flex max-sm:justify-center max-md:justify-center font-poppins'>
                 ABOUT ME
               </h1>
-              <p className='w-96 text-sm max-sm:w-64 max-xl:w-72 font-sans flex text-center'>
+              <p className='w-96 text-sm max-sm:w-64 max-xl:w-72 font-sans flex text-justify'>
                 {aboutme.description2}
               </p>
               <motion.div
@@ -39,18 +39,18 @@ const Details = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                <button
+              <button
                   className='bg-zinc text-slate-200 h-12 w-72 rounded-md border-2 hover:bg-transparent hover:border-2 font-sans text-xl max-sm:w-64'
                   onClick={() => {
-                    const link = document.createElement('a')
-                    link.href = '../../assets/pdf/Samira_Ahmed_CV.pdf'
-                    link.download = 'Samira_Ahmed_CV.pdf'
-                    link.click()
+                    const link = document.createElement('a');
+                    link.href = '/Samira_Ahmed_CV.pdf'; // 🎯 Correct path
+                    link.download = 'Samira_Ahmed_CV.pdf';
+                    link.click();
                   }}
                 >
                   Download CV
-                </button>
-              </motion.div>
+              </button>
+                              </motion.div>
             </motion.div>
 
             <motion.div

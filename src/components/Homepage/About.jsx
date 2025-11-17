@@ -6,7 +6,7 @@ const About = () => {
     <>
       <div className='flex flex-col justify-center items-center mt-24 ml-16 mr-16 mb-20 max-xl:justify-center max-xl:items-center max-xl:mb-2 max-sm:ml-0 max-sm:mr-0'>
         <motion.h1
-          className='text-center text-2xl my-4 font-mono'
+          className='text-center text-2xl my-4 font-poppins'
           initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ type: 'spring', stiffness: 50, duration: 1 }}
@@ -16,7 +16,7 @@ const About = () => {
         </motion.h1>
 
         <motion.h3
-          className='text-center text-xl my-2 font-mono'
+          className='text-center text-xl my-2'
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{
@@ -31,27 +31,27 @@ const About = () => {
         </motion.h3>
 
         <motion.div
-          className='flex max-xl:justify-center items-center'
-          initial={{ scale: 0, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{
-            type: 'spring',
-            stiffness: 100,
-            damping: 10,
-            duration: 1,
-            delay: 0.6,
-          }}
-          viewport={{ once: false }}
-        >
-          {aboutMe.map((aboutme, index) => (
-            <img
-              className='h-96 w-96 text-center border-2 object-cover max-sm:h-64 max-sm:w-64'
-              key={index}
-              src={aboutme.profilepic1}
-              alt='Samira Ahmed'
-            />
-          ))}
-        </motion.div>
+  className='flex max-xl:justify-center items-center'
+  initial={{ y: 50, opacity: 0 }}      // start slightly below and invisible
+  whileInView={{ y: 0, opacity: 1 }}   // move up to natural position
+  transition={{
+    type: 'tween',                     // smoother than spring
+    ease: 'easeOut',                    // smooth easing
+    duration: 0.8,                      // slightly faster
+    delay: 0.6,
+  }}
+  viewport={{ once: false }}
+>
+  {aboutMe.map((aboutme, index) => (
+    <img
+      className='h-96 w-96 text-center border-2 object-cover max-sm:h-64 max-sm:w-64'
+      key={index}
+      src={aboutme.profilepic1}
+      alt='Samira Ahmed'
+    />
+  ))}
+</motion.div>
+
       </div>
 
       {aboutMe.map((aboutme, index) => (
@@ -69,13 +69,13 @@ const About = () => {
             transition={{ type: 'spring', stiffness: 60, duration: 0.8 }}
             viewport={{ once: false }}
           >
-            <h3 className='text-2xl max-sm:text-xl font-mono'>
+            <h3 className='text-2xl max-sm:text-xl font-poppins'>
               Let Me Introduce Myself
             </h3>
-            <h1 className='text-5xl my-4 max-sm:text-2xl font-mono'>
+            <h1 className='text-5xl my-4 max-sm:text-2xl'>
               ABOUT ME
             </h1>
-            <p className='w-96 text-sm max-sm:w-64 max-xl:w-72 font-sans'>
+            <p className='w-96 text-sm max-sm:w-64 max-xl:w-72 font-sans text-justify'>
               {aboutme.description1}
             </p>
             <div className='flex space-x-4 my-6'>
@@ -96,15 +96,15 @@ const About = () => {
 
           <motion.div
             className='flex max-xl:justify-center'
-            initial={{ scale: 0, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{
-              type: 'tween',
-              stiffness: 100,
-              damping: 15,
-              delay: 0.5,
-            }}
-            viewport={{ once: false }}
+  initial={{ y: 50, opacity: 0 }}     // start slightly below and invisible
+  whileInView={{ y: 0, opacity: 1 }}  // move up to natural position
+  transition={{
+    type: 'tween',                     // smooth animation
+    ease: 'easeOut',                    // gentle easing
+    duration: 0.8,                      // smooth duration
+    delay: 0.5,
+  }}
+  viewport={{ once: false }}
           >
             <img
               className='h-96 w-96 text-center border-2 object-cover max-sm:h-64 max-sm:w-64 max-sm:space-x-0 max-sm:hidden max-md:hidden'

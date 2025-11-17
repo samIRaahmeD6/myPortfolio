@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <>
       <div className='bg-zinc flex space-x-48 h-52 justify-center p-10 max-sm:flex-col max-sm:items-center max-sm:space-x-0 max-sm:h-80 max-sm:justify-center max-md:space-x-10 max-sm:space-y-6'>
-        <div className='font-mono'>
+        <div className=''>
           <h1 className='text-xl '>Important Links</h1>
           <ul className='text-sm max-sm:flex max-sm:flex-col max-sm:items-center'>
             <li>
@@ -29,7 +29,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className='font-mono'>
+        <div className=''>
           <h1 className='text-xl max-sm:flex max-sm:justify-center'>
             Contact Info
           </h1>

@@ -32,7 +32,7 @@ const ContactForms = () => {
           type='text'
           placeholder='Name'
           name='name'
-          className='bg-zinc w-96 h-10 rounded-lg p-4 max-sm:w-64 text-slate-200'
+          className='bg-zinc w-[600px] h-10 rounded-lg p-4 max-sm:w-64 text-slate-200 border border-white/20 backdrop-blur-sm shadow-sm'
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -42,7 +42,7 @@ const ContactForms = () => {
           type='email'
           placeholder='Email'
           name='email'
-          className='bg-zinc w-96 h-10 rounded-lg p-4 max-sm:w-64 text-slate-200'
+          className='bg-zinc w-[600px] h-10 rounded-lg p-4 max-sm:w-64 text-slate-200 border border-white/20 backdrop-blur-sm shadow-sm'
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -51,15 +51,16 @@ const ContactForms = () => {
         <motion.textarea
           name='message'
           placeholder='Message'
-          className='bg-zinc w-96 h-64 rounded-lg p-4 resize-none max-sm:w-64 text-slate-200'
+          className='bg-zinc w-[600px] h-64 rounded-lg p-4 resize-none max-sm:w-64 text-slate-200 border border-white/20 backdrop-blur-sm shadow-sm'
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: false }}
         ></motion.textarea>
+        <div className='flex flex-start w-[600px] max-sm:w-64'>
         <motion.button
           type='submit'
-          className='bg-zinc w-96 rounded-lg h-10 max-sm:w-64'
+          className='bg-zinc w-40 rounded-lg h-10 max-sm:w-64 border border-white/20 backdrop-blur-sm shadow-sm'
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -72,6 +73,7 @@ const ContactForms = () => {
         >
           Send
         </motion.button>
+        </div>
       </motion.form>
     </div>
   )

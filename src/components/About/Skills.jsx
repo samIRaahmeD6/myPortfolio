@@ -13,24 +13,29 @@ const Skills = () => {
         <h1 className='max-sm:text-4xl'>Skills</h1>
       </div>
       <motion.div
-        className='grid grid-cols-5 gap-10 justify-items-center max-sm:grid-cols-3 max-sm:gap-5 max-md:grid-cols-4'
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.2 }}
-      >
-        {skillData.map((skill, index) => (
-          <motion.div
-            key={index}
-            className='bg-zinc h-36 w-40 rounded-md flex flex-col justify-center items-center text-center max-sm:h-16 max-sm:w-20 max-md:w-28 max-md:h-20 text-2xl max-sm:text-lg'
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            transition={{ duration: 0.4 }}
-          >
-            <skill.logo className='text-4xl max-sm:text-sm mb-2' />
-            <h1 className='max-sm:text-sm'>{skill.title}</h1>
-          </motion.div>
-        ))}
-      </motion.div>
+  className="grid grid-cols-5 gap-10 justify-items-center max-sm:grid-cols-3 max-sm:gap-5 max-md:grid-cols-4"
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 1, delay: 0.2 }}
+>
+  {skillData.map((skill, index) => (
+    <motion.div
+      key={index}
+      className="bg-zinc h-36 w-40 rounded-2xl flex flex-col justify-center 
+                 items-center text-center max-sm:h-16 max-sm:w-20 
+                 max-md:w-28 max-md:h-20 text-2xl max-sm:text-lg p-4
+                 border border-white/20 backdrop-blur-sm shadow-sm"
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ duration: 0.4 }}
+    >
+      <skill.logo className="text-4xl max-sm:text-sm mb-2 text-white" />
+      <h1 className="max-sm:text-sm text-white">{skill.title}</h1>
+    </motion.div>
+  ))}
+</motion.div>
+
+
     </motion.div>
   )
 }

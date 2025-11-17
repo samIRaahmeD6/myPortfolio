@@ -15,8 +15,8 @@ const Contact = () => {
           duration: 0.8,
         }}
       >
-        <h3 className='text-xl font-mono max-sm:text-sm'>Want to contact?</h3>
-        <h1 className='text-5xl font-mono max-sm:text-xl'>Contact</h1>
+        <h3 className='text-xl max-sm:text-sm'>Want to contact?</h3>
+        <h1 className='text-5xl max-sm:text-xl'>Contact</h1>
         <motion.button
           className='bg-slate-200 text-zinc h-10 w-40 rounded-md mt-4 max-sm:w-36 hover:bg-bodyColor hover:text-mutedGray'
           whileHover={{ scale: 1.1 }}

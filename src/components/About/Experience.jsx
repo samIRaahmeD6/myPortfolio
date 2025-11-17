@@ -5,11 +5,12 @@ const Experience = () => {
   return (
     <div className='flex flex-col justify-center ml-36 mr-36 max-sm:ml-0 max-sm:mr-0 text-center mb-40 max-sm:mb-10 '>
       <motion.h1
-        className='text-5xl mb-10 max-sm:text-4xl font-mono'
+        className='text-5xl mb-10 max-sm:text-4xl'
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: false }}
+
       >
         Experience
       </motion.h1>
@@ -18,7 +19,7 @@ const Experience = () => {
         {ExperienceData.map((experience, index) => (
           <motion.div
             key={index}
-            className='bg-zinc w-72 h-96 rounded-md max-sm:w-72 max-sm:ml-0 max-sm:mr-0 font-mono'
+            className='bg-zinc w-72 h-96 rounded-md max-sm:w-72 max-sm:ml-0 max-sm:mr-0 border border-white/20 backdrop-blur-sm shadow-sm'
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 + index * 0.2 }}

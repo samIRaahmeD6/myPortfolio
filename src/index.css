@@ -1,3 +1,5 @@
+@import "@fontsource/poppins"; /* IMPORT FONTS FIRST */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,5 +7,4 @@
 body {
   background: #27272a;
   color: #f5f7f8;
-  font-family: monospace;
 }
