@@ -61,7 +61,7 @@ const Expertise = () => {
           <h3 className='text-2xl mb-4 '>BackEnd</h3>
           <p className='text-center'>
             I specialize in building scalable, secure, and performant server-side
-            applications. Experienced in Node.js, Express.js, and MongoDB for building
+            applications. Experienced in Node.js, Express.js, and MySql for building
             RESTful APIs and connecting to databases. I focus on implementing secure
             authentication and optimizing API performance for a seamless user experience.
           </p>
@@ -85,7 +85,7 @@ const Expertise = () => {
             As a full stack developer, I have expertise in both front-end and back-end
             technologies. I create dynamic, responsive user interfaces using React.js and
             Tailwind CSS while building robust server-side applications with Node.js,
-            Express.js, and databases like MongoDB or MySQL.
+            Express.js, and databases like MySQL.
           </p>
         </div>
       </div>
