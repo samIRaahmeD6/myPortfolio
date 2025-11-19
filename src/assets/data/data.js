@@ -21,7 +21,7 @@ const Projects = [
     image: teamCollab,
     description: 'TeamCollab is a collaborative platform that enables real-time communication and task management for teams.',
     title: 'Teamcollab',
-    link:'https://github.com/samIRaahmeD6/Teamcollab',
+    link:'https://samiraahmed6.github.io/TeamCollab_Frontend/',
     description2:
       'TeamCollab is a comprehensive team collaboration platform designed to streamline communication and project management. It allows team members to chat in real-time, create and assign tasks, share updates, and manage projects efficiently within a single workspace. With features like group discussions, status tracking, and centralized message history, TeamCollab ensures that teams stay organized, connected, and productive. This project was built using Node.js, Express.js, MySQL, Socket.IO, Angular, and Tailwind CSS, combining real-time communication with a responsive and interactive user interface.',
   },
