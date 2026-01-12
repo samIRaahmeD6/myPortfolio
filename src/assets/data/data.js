@@ -6,6 +6,7 @@ import digitClassifier from '../images/digit_classifier.png'
 import portfolio from '../images/portfolio.png'
 import profilePic1 from '../images/profilepic.jpg'
 import profilePic2 from '../images/profilepic2.jpg'
+import financeManager from "../images/financeManager.png"
 import { FaReact } from 'react-icons/fa'
 import { IoLogoJavascript } from 'react-icons/io'
 import { FaHtml5 } from 'react-icons/fa'
@@ -24,6 +25,14 @@ const Projects = [
     link:'https://samiraahmed6.github.io/TeamCollab_Frontend/',
     description2:
       'TeamCollab is a comprehensive team collaboration platform designed to streamline communication and project management. It allows team members to chat in real-time, create and assign tasks, share updates, and manage projects efficiently within a single workspace. With features like group discussions, status tracking, and centralized message history, TeamCollab ensures that teams stay organized, connected, and productive. This project was built using Node.js, Express.js, MySQL, Socket.IO, Angular, and Tailwind CSS, combining real-time communication with a responsive and interactive user interface.',
+  },
+  {
+    image: financeManager,
+    description: 'For managing finance automatically, keeps record of income and expenses also AI gets prediction for next months expense',
+    title: 'Finance Manager',
+    link:'https://github.com/samIRaahmeD6/FinWise',
+    description2:
+      'A full-stack application built with React, Node.js, and MySQL that helps users track income, expenses, and remaining balance Integrated AI-powered expense prediction to forecast next months spending for each user.',
   },
   {
     image: digitClassifier,
