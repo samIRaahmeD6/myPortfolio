@@ -105,49 +105,65 @@ const Project_container = () => {
 
           {/* DETAILS */}
           <motion.div
-            className="w-full bg-zinc rounded-lg p-2"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              damping: 25,
-              duration: 0.6,
-            }}
-            viewport={{ once: false }}
-          >
-            <h3 className="mb-2 text-2xl text-white">
-              {project.title}
-            </h3>
+  className="w-full bg-zinc rounded-lg p-2"
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{
+    type: "spring",
+    stiffness: 100,
+    damping: 25,
+    duration: 0.6,
+  }}
+  viewport={{ once: false }}
+>
+  {/* Project Title */}
+  <h3 className="mb-2 text-2xl text-white">
+    {project.title}
+  </h3>
 
-            <p className="mb-2 text-justify text-gray-200">
-              {expandedProject === index
-                ? project.description2 || "No detailed description available."
-                : `${(
-                    project.description2 ||
-                    "No detailed description available."
-                  ).substring(0, 100)}...`}
-            </p>
-            <div className='flex justify-between'>
-            {project.description2 && project.description2.length > 100 && (
-              <button
-                className="text-blue-300 hover:underline"
-                onClick={() => toggleReadMore(index)}
-              >
-                {expandedProject === index ? "Read Less" : "Read More"}
-              </button>
-              
-            )}
-            <a
-              className="text-blue-300 hover:underline"
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            {project.link.includes("github.com") ? "GitHub" : "Live Demo"}
-            </a>
-            </div>
-          </motion.div>
+  {/* Description (BULLET FORMAT ONLY for description2) */}
+  {project.description2 && (
+    <>
+      {expandedProject === index ? (
+        <ul className="mb-2 text-gray-200 list-disc pl-5 space-y-1 text-justify">
+          {project.description2.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))}
+        </ul>
+      ) : (
+        <ul className="mb-2 text-gray-200 list-disc pl-5 space-y-1 text-justify">
+          {project.description2.slice(0, 2).map((item, i) => (
+            <li key={i}>{item}</li>
+          ))}
+        </ul>
+      )}
+    </>
+  )}
+
+  {/* Bottom Actions */}
+  <div className="flex justify-between items-center">
+    
+    {/* Read More / Less Button */}
+    {project.description2 && project.description2.length > 2 && (
+      <button
+        className="text-blue-300 hover:underline"
+        onClick={() => toggleReadMore(index)}
+      >
+        {expandedProject === index ? "Read Less" : "Read More"}
+      </button>
+    )}
+
+    {/* Project Link */}
+    <a
+      className="text-blue-300 hover:underline"
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {project.link.includes("github.com") ? "GitHub" : "Live Demo"}
+    </a>
+  </div>
+</motion.div>
            
         </div>
         {/* ---------- END GLASS CARD ---------- */}
