@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import HomePage from './components/Homepage/HomePage'
 import About from './components/About/About'
 import Projects from './components/Projects/Projects'
@@ -6,9 +6,7 @@ import Contact from './components/Contacts/Contact'
 
 function App() {
   return (
-    <Router basename='/myPortfolio'>
-      {' '}
-      {/* Set the basename to match your subdirectory */}
+    <Router>
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<About />} />
